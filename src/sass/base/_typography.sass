@@ -3,6 +3,7 @@ body
     letter-spacing: .2rem
     font-weight: 400
     color: $color-grey
+    font-size: $font-size-paragraph
     
 .title-first
     text-align: center
@@ -29,6 +30,33 @@ body
         animation-delay: .7s
         animation-fill-mode: backwards
         animation-timing-function: ease
+.title-secondary
+    font-size: $font-size-h2
+    letter-spacing: 1rem
+    text-transform: uppercase
+    font-weight: 800
+    background: $gradien-light
+    background-clip: text
+    color: transparent 
+    transition: all .7s
+    backface-visibility: hidden 
+    &:hover 
+        transform: skewY(2deg) skewX(8deg) scale(1.1)
+        // text-shadow: $box-shadow
+.title-third
+    font-size: $font-size-h3
+    letter-spacing: .2rem
+    text-transform: uppercase
+    font-weight: 800 
+
+.paragraph
+    font-size: $font-size-paragraph
+    letter-spacing: .2rem
+    font-weight: 400
+
+
+
+
 .menu-lines
     height: .2rem
     width: 3.2rem

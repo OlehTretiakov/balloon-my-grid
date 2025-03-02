@@ -1,7 +1,7 @@
 .btn
     &:link, &:visited
         position: relative
-        font-size: 1.6rem
+        font-size: $font-size-paragraph
         @include style-link($color-grey)       
         padding: 1.5rem 4rem
         background-color: $color-white
@@ -32,3 +32,20 @@
         border-radius: 10rem
         display: inline-block
         transition: all .7s
+
+.btn-text
+    &:link, &:visited 
+        display: inline-block
+        font-size: $font-size-paragraph
+        letter-spacing: .2rem
+        font-weight: 700
+        padding: .6rem
+        border-bottom: 2px solid $color-brown-light
+        transition: .5s
+        color: $color-brown-light
+    &:hover
+        background-color: $color-brown-light
+        border-radius: .4rem
+        color: $color-white
+    &:active 
+        transform: translateY(.2rem)

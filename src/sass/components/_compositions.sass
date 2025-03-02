@@ -1,0 +1,25 @@
+.composition
+    position: relative
+    &__photo
+        position: absolute
+        width: 55%
+        transition: all .5s
+        border-radius: .5rem
+        outline-offset: 1.1rem
+        &_n1
+            top: 0
+            left: .5rem
+        &_n2
+            top: 5.5rem
+            right: 0
+        &_n3
+            top: 13rem
+            left: 2rem
+        &:hover 
+            z-index: 10
+            transform: scale(1.07)
+            outline: 1rem solid $color-brown-light  
+
+.composition
+    &:hover &__photo:not(:hover)
+        transform: scale(.9)
