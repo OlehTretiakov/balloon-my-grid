@@ -1,0 +1,74 @@
+.tour-card
+    position: relative
+    height: 50rem
+    perspective: 150rem
+    &__side
+        position: absolute
+        top: 0
+        left: 0
+        height: 50rem
+        width: 100%
+        transition: all 1s ease-out
+        color: white
+        backface-visibility: hidden
+        box-shadow: $box-shadow
+        &_front
+            background: white
+        &_back
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-evenly
+            background: $gradien-light
+            transform: rotateY(180deg)
+    &:hover &__side_front
+        transform: rotateY(-180deg)
+    &:hover &__side_back
+        transform: rotateY(0deg)
+    &__img
+        background-blend-mode: hard-light
+        height: 24.5rem
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%)
+        margin-bottom: 4rem
+        &_1
+            background: $color-brown-light url(../img/card-1.jpg) center / cover no-repeat
+        &_2
+            background: $color-brown-light url(../img/card-2.jpg) center / cover no-repeat
+        &_3
+            background: $color-brown-light url(../img/card-3.jpg) center / cover no-repeat
+    &__title
+        position: absolute
+        right: 0
+        top: 17.7rem
+        text-align: right
+        font-size: 2.8rem
+        font-weight: 300
+        text-transform: uppercase
+        letter-spacing: .2rem
+        color: $color-white
+    &__span
+        background: $gradien-light
+        padding: 0 1rem
+        &_1
+            padding-top: 1rem
+        &_2
+            padding-bottom: 1rem
+    &__descr
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 2rem
+        padding-bottom: 4rem
+        li
+            flex: 1
+            font-size: 1.6rem
+            color: $color-grey
+            border-bottom: .16rem solid $color-grey
+            padding-bottom: 0.4rem
+.back-title
+    text-transform: uppercase
+    font-size: 1.6rem
+    font-weight: 300
+
+.back-price
+    font-size: 6rem

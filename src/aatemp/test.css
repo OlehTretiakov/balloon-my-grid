@@ -1,0 +1,43 @@
+.form {
+    margin: 30px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+input {
+    margin-right: 10px;
+    opacity: 0;
+}
+
+label {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+span {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 6px solid #e5771c;
+    border-radius: 50%;
+}
+span::after {
+    content: '';
+    width: 11px;
+    height: 11px;
+    background-color: #e5771c;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+input:checked ~ label span::after {
+    opacity: 1;
+}
+.f {
+    display: inline-block;
+}

@@ -1,8 +1,9 @@
 .btn
-    &:link, &:visited
+
+    &, &:link, &:visited
         position: relative
         font-size: $font-size-paragraph
-        @include style-link($color-grey)       
+        @include style-link($color-grey)
         padding: 1.5rem 4rem
         background-color: $color-white
         border-radius: 5rem
@@ -34,7 +35,7 @@
         transition: all .7s
 
 .btn-text
-    &:link, &:visited 
+    &:link, &:visited
         display: inline-block
         font-size: $font-size-paragraph
         letter-spacing: .2rem
@@ -47,5 +48,10 @@
         background-color: $color-brown-light
         border-radius: .4rem
         color: $color-white
-    &:active 
+    &:active
         transform: translateY(.2rem)
+.btn_dark
+    width: 23rem
+    border: none
+    background-color: $color-brown-light
+    color: $color-white

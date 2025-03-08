@@ -31,6 +31,8 @@ body
         animation-fill-mode: backwards
         animation-timing-function: ease
 .title-secondary
+    position: relative
+    z-index: 10
     font-size: $font-size-h2
     letter-spacing: 1rem
     text-transform: uppercase
@@ -41,8 +43,10 @@ body
     transition: all .7s
     backface-visibility: hidden 
     &:hover 
-        transform: skewY(2deg) skewX(8deg) scale(1.1)
+        transform: skewY(4deg) skewX(12deg) scale(1.03)
         // text-shadow: $box-shadow
+    &_white
+        color: $color-white
 .title-third
     font-size: $font-size-h3
     letter-spacing: .2rem
