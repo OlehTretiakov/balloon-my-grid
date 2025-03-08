@@ -17,4 +17,25 @@
 .section-book
     padding: 10rem
     background: linear-gradient(90deg, $color-brown-light, $color-black)
-     
+
+.footer
+    background-color: #333333
+    padding: 8rem
+    text-align: center
+    &__logo
+        display: block
+        margin: 0 auto
+        width: 12rem
+        height: 15rem
+        margin-bottom: 5rem
+    &__list
+        display: flex
+        justify-content: center
+        gap: 5rem
+        text-transform: uppercase
+        color: $color-white
+        font-weight: 200
+    &__item 
+        transition: all .5s
+    &__item:hover 
+            transform: skewY(8deg)

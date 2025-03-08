@@ -541,6 +541,33 @@ body {
   background: linear-gradient(90deg, #BA8554, #000);
 }
 
+.footer {
+  background-color: #333333;
+  padding: 8rem;
+  text-align: center;
+}
+.footer__logo {
+  display: block;
+  margin: 0 auto;
+  width: 12rem;
+  height: 15rem;
+  margin-bottom: 5rem;
+}
+.footer__list {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 200;
+}
+.footer__item {
+  transition: all 0.5s;
+}
+.footer__item:hover {
+  transform: skewY(8deg);
+}
+
 .header {
   position: relative;
   height: 95vh;
